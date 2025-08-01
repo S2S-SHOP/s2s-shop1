@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S2S SHOP - Boutique Mode</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #f12711, #f5af19);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: black;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: white;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('images/hero.jpg') center/cover no-repeat;
+      height: 350px;
+    }
+    .section-title {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-size: 2rem;
+      color: #f12711;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover { transform: translateY(-5px); }
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product h3 {
+      color: #f12711;
+      margin: 0.8rem 0 0.4rem;
+    }
+    .product p {
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    .product a button {
+      background: #f12711;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .video-section {
+      padding: 2rem;
+      background: #fff9f2;
+      text-align: center;
+    }
+    .video-section video {
+      width: 80%;
+      height: auto;
+      max-width: 700px;
+      border-radius: 10px;
+    }
+    .contact {
+      background: #f12711;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>S2S SHOP</h1>
+  <p>S'HABILLER DE MANIÈRE RESPONSABLE</p>
+</header>
+
+<nav>
+  <a href="#produits">Produits</a>
+  <a href="#videos">Vidéos</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero"></div>
+
+<h2 class="section-title" id="produits">Nos Articles</h2>
+<div class="products">
+
+  <!-- Liste complète des produits avec images locales -->
+  <div class="product"><img src="images/pantalon-jean.jpg" alt=""><h3>Pantalon Jean</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Pantalon Jean"><button>Commander</button></a></div>
+  <div class="product"><img src="images/pantalon-kaki.jpg" alt=""><h3>Pantalon Kaki</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Pantalon Kaki"><button>Commander</button></a></div>
+  <div class="product"><img src="images/pantalon-lin.jpg" alt=""><h3>Pantalon Lin</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Pantalon Lin"><button>Commander</button></a></div>
+  <div class="product"><img src="images/pantalon-coton.jpg" alt=""><h3>Pantalon Coton</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Pantalon Coton"><button>Commander</button></a></div>
+  <div class="product"><img src="images/pantalon-cargo.jpg" alt=""><h3>Pantalon Cargo</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Pantalon Cargo"><button>Commander</button></a></div>
+  <div class="product"><img src="images/chemise-ralph.jpg" alt=""><h3>Chemise Ralph</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Chemise Ralph"><button>Commander</button></a></div>
+  <div class="product"><img src="images/chemise-manche.jpg" alt=""><h3>Chemise Courte ou Longue Manche</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Chemise Manche"><button>Commander</button></a></div>
+  <div class="product"><img src="images/polo-marque.jpg" alt=""><h3>Polos de Marque</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Polo Marque"><button>Commander</button></a></div>
+  <div class="product"><img src="images/lacoste.jpg" alt=""><h3>Lacoste</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Lacoste"><button>Commander</button></a></div>
+  <div class="product"><img src="images/tshirt-marque.jpg" alt=""><h3>T-shirt de Marque</h3><p>15 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander T-shirt Marque"><button>Commander</button></a></div>
+  <div class="product"><img src="images/tshirt-simple.jpg" alt=""><h3>T-shirt Simple</h3><p>10 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander T-shirt Simple"><button>Commander</button></a></div>
+  <div class="product"><img src="images/chaussures.jpg" alt=""><h3>Chaussures (Nu-pieds)</h3><p>25 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Chaussures"><button>Commander</button></a></div>
+  <div class="product"><img src="images/mocassins.jpg" alt=""><h3>Mocassins</h3><p>35 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Mocassins"><button>Commander</button></a></div>
+  <div class="product"><img src="images/sneakers.jpg" alt=""><h3>Sneakers</h3><p>35 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Sneakers"><button>Commander</button></a></div>
+  <div class="product"><img src="images/ceinture.jpg" alt=""><h3>Ceinture</h3><p>10 000 FCFA</p><a href="https://wa.me/221779246535?text=Je veux commander Ceinture"><button>Commander</button></a></div>
+
+</div>
+
+<section class="video-section" id="videos">
+  <h2 class="section-title">Vidéos de Produits</h2>
+  <video controls>
+    <source src="videos/produit_demo.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture vidéo.
+  </video>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact & Réseaux</h2>
+  <p>📞 <a href="tel:+221779246535">+221 77 924 65 35</a></p>
+  <p>
+    <a href="https://wa.me/221779246535">WhatsApp</a> |
+    <a href="https://instagram.com/s2s">Instagram</a> |
+    <a href="https://facebook.com/s2s">Facebook</a> |
+    <a href="https://t.me/s2s">Telegram</a> |
+    <a href="https://tiktok.com/@s2s">TikTok</a> |
+    <a href="https://youtube.com/@s2s">YouTube</a>
+  </p>
+  <p>📍 S2S est situé à Yoff, route de l’aéroport près de l’hôpital Philippe Maguilène Senghor.</p>
+</section>
+
+<footer>
+  &copy; 2025 S2S SHOP - Tous droits réservés
+</footer>
+
+</body>
+</html>
